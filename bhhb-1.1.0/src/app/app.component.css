@@ -1,0 +1,31 @@
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+app-main {
+  height: calc(100vh - 60px);
+  margin: 40px 0 20px 0;
+}
+
+app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  app-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  app-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+}
